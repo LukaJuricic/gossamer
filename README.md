@@ -12,8 +12,10 @@ Creating such documentation would help me understand better the subjects, and wo
 
 ## Current status
 
-Just started!
-Researching currently available hexapod robots, preferably open-sourced, to get a feeling of the possible general designs.
+Researching mechatronics:
+- Motors: on it
+- Structure: to do
+- Electronics: to do
 
 ## Content
 
