@@ -2,7 +2,7 @@
 
 ## A personal journey into robotics
 
-Gossamer is a personal project for the creation of a smart hexapod, Artie.
+Gossamer is a personal project for the creation of a smart hexapod robot, Artie.
 It contains a guide on how to create Artie from scratch and program it.
 
 The main objective is to have fun and deepen my knowledge of robotics, in all its multi-faceted aspects: mechanics, manufacturing, electronics, motion control, computer vision, navigation, etc...
@@ -13,4 +13,9 @@ Creating such documentation would help me understand better the subjects, and wo
 ## Current status
 
 Just started!
-Researching currently available hexapods, preferably open-sourced, to get a feeling of the possible general designs.
+Researching currently available hexapod robots, preferably open-sourced, to get a feeling of the possible general designs.
+
+## Content
+
+- [Other works](/docs/Other-works.md): research on other hexapod robots
+- [Mechatronics](/docs/Mechatronics.md): mechatronic design notes
