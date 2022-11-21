@@ -18,3 +18,5 @@ Boxes and without Joint-Torque Sensors](https://hal.archives-ouvertes.fr/hal-011
 - [AutomataKit BLDC Driver](https://gitlab.cba.mit.edu/jakeread/atkbldcdriver/-/tree/master/)
 - [Proprioceptive Actuator Design in the MIT Cheetah: Impact Mitigation and High-Bandwidth Physical Interaction for Dynamic Legged Robots](https://www.researchgate.net/publication/312558722_Proprioceptive_Actuator_Design_in_the_MIT_Cheetah_Impact_Mitigation_and_High-Bandwidth_Physical_Interaction_for_Dynamic_Legged_Robots)
 - [Design for 3D agility and virtual compliance using proprioceptive force control in dynamic legged robots](https://www.ri.cmu.edu/pub_files/2016/8/kaloucheThesis.pdf)
+- [Low Cost, High Performance Actuators for Dynamic Robots](https://ceias.nau.edu/capstone/projects/ME/2021/20F09_ExoskeletonActuator/Documents/1057343368-MIT.pdf)
+- [Design and Control of a Open-Source, Low Cost, 3D Printed Dynamic Quadruped Robot](https://www.mdpi.com/2076-3417/11/9/3762/htm)
