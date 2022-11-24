@@ -1,10 +1,15 @@
 # Mechatronics
 
+# Structure
+
+I'm shooting for a hexapod on the bigger side: 4-5kg, 20-30cm leg extension.
+This is to have some freedom in payload and leg extension.
+
 ## Motors
 
 When researching motors, the first thing I looked was the kind that other hexapod projects used.
 Two things were prominent:
-1. If a hexapod on the bigger side is what I'm shooting for (4-5kg, 20-30cm leg extension), substantial continuous torque is required, particularly for the [femur joint](https://en.wikipedia.org/wiki/Leg#/media/File:InsectLeg.svg).
+1. With a hexapod on the bigger side, substantial continuous torque is required, particularly for the [femur joint](https://en.wikipedia.org/wiki/Leg#/media/File:InsectLeg.svg).
 The least number of legs touching the ground and supporting the weight is 3, during tripod gaits (without accounting for [unusual ones](https://www.hfsp.org/hfsp-news-events/discovery-bipod-gait-video)), so the continuous torque required is roughly 5(mass) * 9.8(g) / 3 * 0.3(lever length) = 4.9Nm (or roughly 48kg/cm).
 Since this is generally [2-4 times smaller](https://www.youtube.com/watch?v=h_SWpU3rmG4&list=PLBRNvqLTPp3t31J8vPxcY-aW_77x5udtQ&index=1) in RC servos, it means having at least [100kg/cm](https://www.trossenrobotics.com/p/mx-106t-dynamixel-robot-servo.aspx) servos like the [Pheonix-MX](http://zentasrobots.com/mx-phoenix-hexapod/), which are very pricey at ~600$.
 2. All the other projects found use RC servos, which are only controlled in [position only](https://en.wikipedia.org/wiki/Servo_control).
@@ -14,6 +19,13 @@ All of the research somehow landed towards the amazing [MIT Cheetah 3](https://w
 The idea is to use torque-dense motors with low gear ratios (<10, not >100 like the typical servos) with low inertia limbs to get more direct force feedback directly on the motor.
 The motor control loop can compensate directly without complex elastic models of the leg.
 It also minimizes impact forces, which are a common cause of failure in rough terrain locomotion.
+
+## Drives
+
+Some motors come with encoder and drives embedded, which would be MUCH easier to use.
+This comes with some limits in the motor selection (there are many motors without embedded drives) as well as in the control logic (if the drive is there, it seems that it is not usually programmable).
+On the other hand, one could simply buy separate motor drives but for some reason they all seem ridiculously expensive compared to the required materials.
+Probably it is just me missing something, but I'm also trying to understand how difficult it would be to make a custom motor drive, starting from some open source ones.
 
 # References
 
@@ -34,3 +46,5 @@ Boxes and without Joint-Torque Sensors](https://hal.archives-ouvertes.fr/hal-011
 - [Ben Katz Blog](https://build-its-inprogress.blogspot.com/)
 - [Benjamin Vedder blog](http://vedder.se/)
 - [Benjamin Vedder Github](https://github.com/vedderb)
+- [Top 5 Open Source Projects to Design MVP of Your Motor Control Solution](https://promwad.com/news/open-source-motor-control)
+- [How to Make Advanced BLDC Motor Controllers](https://resources.altium.com/p/build-advanced-brushless-motor-controller)

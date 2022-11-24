@@ -13,9 +13,9 @@ Creating such documentation would help me understand better the subjects, and wo
 ## Current status
 
 Researching mechatronics:
-- Motors: on it
-- Structure: to do
-- Electronics: to do
+- Motors: thinking about BLDC with low-ratio gears
+- Structure: very vague idea
+- Electronics: motor drives, make or buy?
 
 ## Content
 
